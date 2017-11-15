@@ -5,7 +5,7 @@ const jasmine = new Jasmine();
 jasmine.loadConfigFile('spec/support/jasmine.json');
 
 jasmine.execute();
-function GapFilling() {
+function gapFilling() {
     var result = 0;
 
     var uml = document.getElementById("exampleInputName4");
@@ -23,7 +23,7 @@ function GapFilling() {
     return result;
 
 }
-function SingleChoice() {
+function singleChoice() {
     var result = 0;
     var uml1 = document.getElementsByName("optionsRadios");
 
@@ -42,7 +42,7 @@ function SingleChoice() {
 
     return result;
 }
-function MultipleChoice() {
+function multipleChoice() {
     var check1 = document.getElementsByName("check");
     var result = 0;
 
@@ -59,7 +59,7 @@ function MultipleChoice() {
 
     return result;
 }
-function TrueOrFalse() {
+function trueOrFalse() {
     var result = 0;
     var judge = document.getElementsByName("inlineRadioOptions");
 
@@ -72,7 +72,7 @@ function TrueOrFalse() {
     }
     return result;
 }
-function ShortAnswer() {
+function shortAnswer() {
     var result = 0;
     var short = document.getElementById("short");
 
@@ -84,12 +84,12 @@ function ShortAnswer() {
     return result;
 }
 function main() {
-    var GapFillingScore = GapFilling();
-    var SingleChoiceScore = SingleChoice();
-    var MultipleChoiceScore = MultipleChoice();
-    var TrueOrFalseScore = TrueOrFalse();
-    var ShortAnswerScore = ShortAnswer();
+    var gapFillingScore = gapFilling();
+    var singleChoiceScore = singleChoice();
+    var multipleChoiceScore = multipleChoice();
+    var trueOrFalseScore = trueOrFalse();
+    var shortAnswerScore = shortAnswer();
 
-    alert(GapFillingScore + SingleChoiceScore + MultipleChoiceScore + TrueOrFalseScore + ShortAnswerScore);
+    alert(gapFillingScore + singleChoiceScore + multipleChoiceScore + trueOrFalseScore + shortAnswerScore);
 
 }
